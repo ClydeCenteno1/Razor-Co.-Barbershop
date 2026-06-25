@@ -13,10 +13,11 @@
 <body class="bg-[#F5F0E8]">
 
     <!-- Navbar Section -->
-    <nav class="px-4 py-4 bg-[#1A1A18] m-5 max-lg:m-2 rounded-3xl border shadow-2xl absolute top-0 left-0 right-0 z-50">
+    <nav
+        class="px-4 py-4 bg-[#1A1A18] m-5 max-lg:m-2 rounded-3xl border border-[#C8A96E] shadow-2xl absolute top-0 left-0 right-0 z-50">
         <div class="flex justify-between">
             <div class="flex items-center space-x-2 max-lg:mx-auto">
-                <img src="Logo.png" alt="logo" class="h-10 w-10 rounded-full border">
+                <img src="Logo.png" alt="logo" class="h-10 w-10 rounded-full border border-[#C8A96E]">
                 <p class="max-xl:hidden font-bold md:text-xl text-white">Razor & Co. Barbershop</p>
             </div>
             <ul class="text-white md:text-2xl max-lg:hidden font-semibold flex items-center space-x-7 ">
@@ -26,24 +27,25 @@
                 <a href="#">TEAM</a>
                 <a href="#">CONTACT</a>
 
-                <a class="p-2 leather font-bold rounded-lg bg-[#C8A96E]" href="#">
+                <a class="p-2 leather font-bold bg-[#C8A96E] rounded-lg text-white" href="#">
                     <span class="charcoal">Book Now</span>
                 </a>
 
             </ul>
 
             <div class="lg:hidden cursor-pointer">
-                <i class="fa fa-bars text-white text-3xl" aria-hidden="true" id="hamburgerIcon"></i>
+                <i class="fa fa-bars text-[#C8A96E] text-3xl " aria-hidden="true" id="hamburgerIcon"></i>
             </div>
         </div>
-        <div class="mobileNav lg:hidden" id="mobileNav">
-            <div class="flex">
-                <ul class="text-white space-y-5">
-                    <a href="#" class="block mt-3">SERVICES</a>
-                    <a href="#" class="block">ABOUT</a>
-                    <a href="#" class="block">GALLERY</a>
-                    <a href="#" class="block">TEAM</a>
-                    <a href="#" class="block">CONTACT</a>
+        <div class="mobileNav hidden" id="mobileNav">
+            <div>
+                <ul class="flex flex-col text-white space-y-5 font-semibold">
+                    <a href="#" class=" mt-3">SERVICES</a>
+                    <a href="#" class="">ABOUT</a>
+                    <a href="#" class="">GALLERY</a>
+                    <a href="#" class="">TEAM</a>
+                    <a href="#"
+                        class="gold px-3 py-2 rounded-lg text-center bg-[#C8A96E] charcoal font-bold">CONTACT</a>
                 </ul>
             </div>
         </div>
@@ -55,57 +57,198 @@
 
         <div class="absolute inset-0 bg-black/45"></div>
         <div class="relative text-center text-white font-bold lg:text-7xl space-y-3">
-            <h1 class="max-md:text-4xl max-lg:text-5xl lg:text-8xl">EXPERIENCE. STYLE. GROOMING.</h1>
+            <h1 class="max-md:text-4xl max-lg:text-5xl lg:text-8xl">EXPERIENCE. <span class="gold">STYLE.</span>
+                GROOMING.</h1>
             <h2 class="max-md:text-lg max-xl:text-3xl lg:text-5xl">BOOK YOUR NEXT HAIRTCUT TODAY.</h2>
-            <a href="#"
-                class=" md:text-[2rem] md:text-5xl inline-block border max-md:px-4 max-md:py-2 md:p-4 bg-[#C8A96E] rounded-lg charcoal">BOOK
-                NOW</a>
-        </div>
+            <div>
+                <a href="#"
+                    class=" md:text-[2rem] md:text-5xl inline-block max-md:px-4 max-md:py-2 md:p-4 bg-[#C8A96E] rounded-lg charcoal">BOOK
+                    NOW</a>
+
+            </div>
     </section>
     <!-- Services -->
     <section class="my-10 container mx-auto space-y-10">
-        <h1 class="text-7xl text-center font-semibold">SERVICES</h1>
+        <h2 class="text-5xl text-center font-semibold">SERVICES</h2>
         <div class="grid lg:grid-cols-3 text-center max-lg:gap-5">
 
-            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-black p-5 rounded-2xl">
+            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-[#C8A96E] p-5 rounded-2xl">
                 <div class="flex justify-center">
                     <img src="blade.png" alt="blade"
-                        class="h-[10rem] w-[10rem] shrink-0 border-2 border-black rounded-full bg-white my-auto">
+                        class="h-[10rem] w-[10rem] shrink-0 border border-[#C8A96E] rounded-full bg-white my-auto">
                 </div>
                 <div class="my-auto space-y-4">
                     <h2 class="font-semibold text-lg">HAIRCUT</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore numquam repellendus rerum quod odio incidunt molestias!.</p>
-                    <h3 class="font-bold text-3xl">₱150</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore
+                        numquam repellendus rerum quod odio incidunt molestias!.</p>
+                    <h3
+                        class="font-bold text-3xl border border-[#C8A96E] border inline-block px-2 bg-[#C8A96E] rounded-xl">
+                        ₱150</h3>
                 </div>
             </div>
 
-            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-black p-5 rounded-2xl">
+            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-[#C8A96E] p-5 rounded-2xl">
                 <div class="flex justify-center">
                     <img src="scissor.png" alt="blade"
-                        class="h-[10rem] w-[10rem] shrink-0 border-2 border-black rounded-full bg-white my-auto">
+                        class="h-[10rem] w-[10rem] shrink-0 border border-[#C8A96E] rounded-full bg-white my-auto">
                 </div>
                 <div class="my-auto space-y-4">
                     <h2 class="font-semibold text-lg">BEARD TRIM</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore numquam repellendus rerum quod odio incidunt molestias!.</p>
-                    <h3 class="font-bold text-3xl">₱200</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore
+                        numquam repellendus rerum quod odio incidunt molestias!.</p>
+                    <h3
+                        class="font-bold text-3xl border border-[#C8A96E] border inline-block px-2 bg-[#C8A96E] rounded-xl">
+                        ₱200</h3>
                 </div>
             </div>
 
-            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-black p-5 rounded-2xl">
+            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-[#C8A96E] p-5 rounded-2xl">
                 <div class="flex justify-center">
                     <img src="comb.png" alt="blade"
-                        class="h-[10rem] w-[10rem] shrink-0 border-2 border-black rounded-full bg-white my-auto">
+                        class="h-[10rem] w-[10rem] shrink-0 border border-[#C8A96E] rounded-full bg-white my-auto">
                 </div>
                 <div class="my-auto space-y-4">
                     <h2 class="font-semibold text-lg">SHAVE</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore numquam repellendus rerum quod odio incidunt molestias!.</p>
-                    <h3 class="font-bold text-3xl">₱50</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore
+                        numquam repellendus rerum quod odio incidunt molestias!.</p>
+                    <h3
+                        class="font-bold text-3xl border border-[#C8A96E] border inline-block px-2 bg-[#C8A96E] rounded-xl">
+                        ₱50</h3>
                 </div>
             </div>
 
         </div>
     </section>
 
+    <!-- About the shop -->
+
+    <section class="bg-[#C8A96E] py-7">
+        <div class="container mx-auto">
+            <div class="grid lg:grid-cols-2 mx-2 gap-5">
+
+                <div class="space-y-2 flex-col justify-center max-md:text-center ">
+                    <div>
+                        <h2 class="text-5xl font-semibold">ABOUT THE SHOP</h2>
+                    </div>
+                    <p class="leading-relaxed text-justi">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Animi excepturi
+                        saepe ex voluptas neque consequuntur libero, facere fugit voluptatem accusamus iure officiis
+                        aliquid
+                        aspernatur dolore, laudantium illo! Odit, atque dolorum.
+                        Eveniet omnis eaque error ipsum corrupti, obcaecati nostrum quae fuga, ut veritatis modi.
+                        Facilis,
+                        amet consequuntur maiores beatae nam autem non minus quod dicta. Reiciendis reprehenderit amet
+                        enim
+                        voluptate culpa?
+                        Deserunt, velit? Veniam, rem optio. Perspiciatis sint a odit adipisci corrupti sed sunt autem
+                        tempore. Minima veritatis harum doloremque placeat, ipsum quos facere ab et vero consectetur?
+                        Dolorem, consequuntur consequatur!</p>
+                </div>
+
+                <img src="https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Barbershop_Interior_Design_13_1024x1024.webp?v=1729670363"
+                    class="max-w-full h-auto rounded-2xl shadow-2xl border-2 border-[#C8A96E]">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="bg-[#1A1A18] py-10">
+        <div class="container mx-auto">
+            <div class="text-center mx-2">
+                <h2 class="text-5xl font-semibold gold">GALLERY</h2>
+                <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 mt-10">
+
+                    <div>
+                        <img src="https://img.magnific.com/free-photo/barber-shop-interior_1163-2009.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt=""
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                    </div>
+
+                    <div>
+                        <img src="https://images.unsplash.com/photo-1675599193990-33d71150902b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            alt=""
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                    </div>
+
+                    <div>
+                        <img src="https://i.pinimg.com/736x/0d/2e/58/0d2e58bce8df868d43671f655de1c536.jpg" alt=""
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                    </div>
+
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFyPEcRdyOqJKfpOoTZGz2Acs5wchen11P85Bk0aypuQc_uN9WaX6fCY&s=10"
+                            alt=""
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                    </div>
+
+                    <div>
+                        <img src="https://suimas.co.ke/wp-content/uploads/2025/07/Barbershop-Interior-Designers-512x910.jpeg"
+                            alt=""
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                    </div>
+
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjUgQVzUu9T41hrp99VpZsTux1XY8BCKzNDixXNcdkGZ-0ujb7PyTS632&s=10"
+                            alt=""
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+
+    <section class="my-5">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="text-5xl font-semibold">TEAM</h2>
+            </div>
+            <div class="grid lg:grid-cols-2 gap-2 mt-5">
+                <div class="flex justify-center items-center flex-col">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyaUzlRNRsPLJNuouKGl5XYRH1CknlxMnhnOkCr6T9gReDwCtpOZYLP4&s=10"
+                        alt="barber" class="rounded-full w-64 h-64 object-cover">
+                    <div class="text-center">
+                        <h3 class="font-semibold text-lg">Amira Feil</h3>
+                        <h4>Barber</h4>
+                    </div>
+                </div>
+
+                <div class="flex justify-center items-center flex-col">
+                    <img src="https://as2.ftcdn.net/jpg/06/10/51/33/1000_F_610513347_Qjqz5OOrrUqK02ilUoUyi2ScmMEDxMDm.jpg"
+                        alt="barber" class="rounded-full w-64 h-64 object-cover">
+                    <div class="text-center">
+                        <h3 class="font-semibold text-lg">Hailee Corwin</h3>
+                        <h4>Master Barber</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="bg-[#1A1A18] p-2">
+        <div class="container mx-auto h-[25vh] flex items-center justify-center">
+
+            <div class="grid grid-cols-2 border-b">
+
+                <div class="flex flex-col lg:flex-row">
+                    <div class="flex flex-col items-center justify-center space-y-2">
+                        <img src="logo.png" alt="logo" class="h-20 w-20 rounded-full border border-[#C8A96E]">
+                        <h2 class="text-white font-semibold">Razor & Co. Barbershop</h2>
+                    </div>
+
+                    
+
+  
+            </div>
+    </footer>
 
 
     <script src="app.js"></script>
