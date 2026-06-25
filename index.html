@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor & Co. Barbershop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#F5F0E8]">
+
+    <!-- Navbar Section -->
+    <nav class="px-4 py-4 bg-[#1A1A18] m-5 max-lg:m-2 rounded-3xl border shadow-2xl absolute top-0 left-0 right-0 z-50">
+        <div class="flex justify-between">
+            <div class="flex items-center space-x-2 max-lg:mx-auto">
+                <img src="Logo.png" alt="logo" class="h-10 w-10 rounded-full border">
+                <p class="max-xl:hidden font-bold md:text-xl text-white">Razor & Co. Barbershop</p>
+            </div>
+            <ul class="text-white md:text-2xl max-lg:hidden font-semibold flex items-center space-x-7 ">
+                <a href="#">SERVICES</a>
+                <a href="#">ABOUT</a>
+                <a href="#">GALLERY</a>
+                <a href="#">TEAM</a>
+                <a href="#">CONTACT</a>
+
+                <a class="p-2 leather font-bold rounded-lg bg-[#C8A96E]" href="#">
+                    <span class="charcoal">Book Now</span>
+                </a>
+
+            </ul>
+
+            <div class="lg:hidden cursor-pointer">
+                <i class="fa fa-bars text-white text-3xl" aria-hidden="true" id="hamburgerIcon"></i>
+            </div>
+        </div>
+        <div class="mobileNav lg:hidden" id="mobileNav">
+            <div class="flex">
+                <ul class="text-white space-y-5">
+                    <a href="#" class="block mt-3">SERVICES</a>
+                    <a href="#" class="block">ABOUT</a>
+                    <a href="#" class="block">GALLERY</a>
+                    <a href="#" class="block">TEAM</a>
+                    <a href="#" class="block">CONTACT</a>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section
+        class="relative h-[100vh] bg-black bg-[url('https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-cover flex justify-center items-center"
+        id="hero">
+
+        <div class="absolute inset-0 bg-black/45"></div>
+        <div class="relative text-center text-white font-bold lg:text-7xl space-y-3">
+            <h1 class="max-md:text-4xl max-lg:text-5xl lg:text-8xl">EXPERIENCE. STYLE. GROOMING.</h1>
+            <h2 class="max-md:text-lg max-xl:text-3xl lg:text-5xl">BOOK YOUR NEXT HAIRTCUT TODAY.</h2>
+            <a href="#"
+                class=" md:text-[2rem] md:text-5xl inline-block border max-md:px-4 max-md:py-2 md:p-4 bg-[#C8A96E] rounded-lg charcoal">BOOK
+                NOW</a>
+        </div>
+    </section>
+    <!-- Services -->
+    <section class="my-10 container mx-auto space-y-10">
+        <h1 class="text-7xl text-center font-semibold">SERVICES</h1>
+        <div class="grid lg:grid-cols-3 text-center max-lg:gap-5">
+
+            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-black p-5 rounded-2xl">
+                <div class="flex justify-center">
+                    <img src="blade.png" alt="blade"
+                        class="h-[10rem] w-[10rem] shrink-0 border-2 border-black rounded-full bg-white my-auto">
+                </div>
+                <div class="my-auto space-y-4">
+                    <h2 class="font-semibold text-lg">HAIRCUT</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore numquam repellendus rerum quod odio incidunt molestias!.</p>
+                    <h3 class="font-bold text-3xl">₱150</h3>
+                </div>
+            </div>
+
+            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-black p-5 rounded-2xl">
+                <div class="flex justify-center">
+                    <img src="scissor.png" alt="blade"
+                        class="h-[10rem] w-[10rem] shrink-0 border-2 border-black rounded-full bg-white my-auto">
+                </div>
+                <div class="my-auto space-y-4">
+                    <h2 class="font-semibold text-lg">BEARD TRIM</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore numquam repellendus rerum quod odio incidunt molestias!.</p>
+                    <h3 class="font-bold text-3xl">₱200</h3>
+                </div>
+            </div>
+
+            <div class="flex max-lg:flex-row lg:flex-col mx-2 space-y-4 border border-black p-5 rounded-2xl">
+                <div class="flex justify-center">
+                    <img src="comb.png" alt="blade"
+                        class="h-[10rem] w-[10rem] shrink-0 border-2 border-black rounded-full bg-white my-auto">
+                </div>
+                <div class="my-auto space-y-4">
+                    <h2 class="font-semibold text-lg">SHAVE</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio aliquid illum beatae dolore numquam repellendus rerum quod odio incidunt molestias!.</p>
+                    <h3 class="font-bold text-3xl">₱50</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
