@@ -7,10 +7,16 @@
     <title>Razor & Co. Barbershop</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
-<body class="bg-[#F5F0E8]">
+<body class="bg-[#F5F0E8] font-body">
 
     <!-- Navbar Section -->
     <nav
@@ -18,17 +24,17 @@
         <div class="flex justify-between">
             <div class="flex items-center space-x-2 max-lg:mx-auto">
                 <img src="logo.png" alt="logo" class="h-10 w-10 rounded-full border border-[#C8A96E]">
-                <p class="max-xl:hidden font-bold md:text-xl text-white">Razor & Co. Barbershop</p>
+                <p class="max-xl:hidden font-bold md:text-xl text-white font-heading">Razor & Co. Barbershop</p>
             </div>
-            <ul class="text-white md:text-2xl max-lg:hidden font-semibold flex items-center space-x-7 ">
-                <a href="#">SERVICES</a>
-                <a href="#">ABOUT</a>
-                <a href="#">GALLERY</a>
-                <a href="#">TEAM</a>
-                <a href="#">CONTACT</a>
+            <ul class="text-white md:text-2xl max-lg:hidden font-semibold flex items-center space-x-7 font-heading">
+                <a href="#" class="transition-all duration-200 hover:text-[#C8A96E]">SERVICES</a>
+                <a href="#" class="transition-all duration-200 hover:text-[#C8A96E]">ABOUT</a>
+                <a href="#" class="transition-all duration-200 hover:text-[#C8A96E]">GALLERY</a>
+                <a href="#" class="transition-all duration-200 hover:text-[#C8A96E]">TEAM</a>
+                <a href="#" class="transition-all duration-200 hover:text-[#C8A96E]">CONTACT</a>
 
-                <a class="p-2 leather font-bold bg-[#C8A96E] rounded-lg text-white" href="#">
-                    <span class="charcoal">Book Now</span>
+                <a class="p-2 leather font-bold bg-[#C8A96E] rounded-lg text-white font-heading" href="#">
+                    <span class="charcoal hover:text-red-900 transition-all ">Book Now</span>
                 </a>
 
             </ul>
@@ -39,13 +45,13 @@
         </div>
         <div class="mobileNav hidden" id="mobileNav">
             <div>
-                <ul class="flex flex-col text-white space-y-5 font-semibold">
+                <ul class="flex flex-col text-white space-y-5 font-semibold font-heading">
                     <a href="#" class=" mt-3">SERVICES</a>
                     <a href="#" class="">ABOUT</a>
                     <a href="#" class="">GALLERY</a>
                     <a href="#" class="">TEAM</a>
                     <a href="#"
-                        class="gold px-3 py-2 rounded-lg text-center bg-[#C8A96E] charcoal font-bold">CONTACT</a>
+                        class="gold px-3 py-2 rounded-lg text-center bg-[#C8A96E] charcoal font-bold font-heading">CONTACT</a>
                 </ul>
             </div>
         </div>
@@ -56,27 +62,27 @@
         id="hero">
 
         <div class="absolute inset-0 bg-black/45"></div>
-        <div class="relative text-center text-white font-bold lg:text-7xl space-y-3">
+        <div class="relative text-center text-white font-bold lg:text-7xl space-y-3 font-heading">
             <h1 class="max-md:text-4xl max-lg:text-5xl lg:text-8xl">EXPERIENCE. <span class="gold">STYLE.</span>
                 GROOMING.</h1>
             <h2 class="max-md:text-lg max-xl:text-3xl lg:text-5xl">BOOK YOUR NEXT HAIRTCUT TODAY.</h2>
             <div>
                 <a href="#"
-                    class=" md:text-[2rem] md:text-5xl inline-block max-md:px-4 max-md:py-2 md:p-4 bg-[#C8A96E] rounded-lg charcoal">BOOK
+                    class=" md:text-[2rem] md:text-5xl inline-block max-md:px-4 max-md:py-2 md:p-4 bg-[#C8A96E] rounded-lg charcoal font-heading hover:text-red-900 hover:scale-110 transition-all ease-in-out">BOOK
                     NOW</a>
 
             </div>
     </section>
     <!-- Services -->
     <section class="my-10 container mx-auto space-y-10 px-4">
-        <h2 class="text-5xl text-center font-semibold">SERVICES</h2>
+        <h2 class="text-5xl text-center font-semibold font-heading">SERVICES</h2>
         <div class="grid lg:grid-cols-3 gap-5 text-center lg:text-center">
 
             <div
                 class="flex flex-row lg:flex-col items-center gap-4 border border-[#C8A96E] p-4 lg:p-5 rounded-2xl text-left lg:text-center">
                 <div class="flex justify-center shrink-0">
                     <img src="blade.png" alt="blade"
-                        class="h-[6rem] w-[6rem] lg:h-[10rem] lg:w-[10rem] shrink-0 border border-[#C8A96E] rounded-full bg-white object-cover">
+                        class="h-[6rem] w-[6rem] lg:h-[10rem] lg:w-[10rem] shrink-0 border border-[#C8A96E] rounded-full bg-white object-cover ">
                 </div>
                 <div class="space-y-3 lg:space-y-4">
                     <h2 class="font-semibold text-lg">HAIRCUT</h2>
@@ -131,7 +137,7 @@
 
                 <div class="space-y-2 flex-col justify-center max-md:text-center ">
                     <div>
-                        <h2 class="text-5xl font-semibold">ABOUT THE SHOP</h2>
+                        <h2 class="text-5xl font-semibold font-heading">ABOUT THE SHOP</h2>
                     </div>
                     <p class="leading-relaxed text-justi">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                         Animi excepturi
@@ -159,42 +165,42 @@
     <section class="bg-[#1A1A18] py-10">
         <div class="container mx-auto">
             <div class="text-center mx-2">
-                <h2 class="text-5xl font-semibold gold">GALLERY</h2>
+                <h2 class="text-5xl font-semibold gold font-heading">GALLERY</h2>
                 <div class="grid grid-cols-2 lg:grid-cols-3 gap-3 mt-10">
 
                     <div>
                         <img src="https://img.magnific.com/free-photo/barber-shop-interior_1163-2009.jpg?semt=ais_hybrid&w=740&q=80"
                             alt=""
-                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E] hover:scale-105 duration-300  transition-all ease-in-out">
                     </div>
 
                     <div>
                         <img src="https://images.unsplash.com/photo-1675599193990-33d71150902b?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             alt=""
-                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E] hover:scale-105 duration-300  transition-all ease-in-out">
                     </div>
 
                     <div>
                         <img src="https://i.pinimg.com/736x/0d/2e/58/0d2e58bce8df868d43671f655de1c536.jpg" alt=""
-                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E] hover:scale-105 duration-300  transition-all ease-in-out">
                     </div>
 
                     <div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBFyPEcRdyOqJKfpOoTZGz2Acs5wchen11P85Bk0aypuQc_uN9WaX6fCY&s=10"
                             alt=""
-                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E] hover:scale-105 duration-300  transition-all ease-in-out">
                     </div>
 
                     <div>
                         <img src="https://suimas.co.ke/wp-content/uploads/2025/07/Barbershop-Interior-Designers-512x910.jpeg"
                             alt=""
-                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E] hover:scale-105 duration-300  transition-all ease-in-out">
                     </div>
 
                     <div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMjUgQVzUu9T41hrp99VpZsTux1XY8BCKzNDixXNcdkGZ-0ujb7PyTS632&s=10"
                             alt=""
-                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E]">
+                            class="rounded-2xl w-full h-64 object-cover h-64 shadow-2xl border-2 border-[#C8A96E] hover:scale-105 duration-300  transition-all ease-in-out">
                     </div>
 
 
@@ -209,12 +215,12 @@
     <section class="my-5">
         <div class="container mx-auto">
             <div class="text-center">
-                <h2 class="text-5xl font-semibold">TEAM</h2>
+                <h2 class="text-5xl font-semibold font-heading">TEAM</h2>
             </div>
             <div class="grid lg:grid-cols-2 gap-2 mt-5">
                 <div class="flex justify-center items-center flex-col">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyaUzlRNRsPLJNuouKGl5XYRH1CknlxMnhnOkCr6T9gReDwCtpOZYLP4&s=10"
-                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E]">
+                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E] hover:scale-110 duration-300 transition-all ease-in-out">
                     <div class="text-center">
                         <h3 class="font-semibold text-lg">Amira Feil</h3>
                         <h4>Barber</h4>
@@ -223,7 +229,7 @@
 
                 <div class="flex justify-center items-center flex-col">
                     <img src="https://as2.ftcdn.net/jpg/06/10/51/33/1000_F_610513347_Qjqz5OOrrUqK02ilUoUyi2ScmMEDxMDm.jpg"
-                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E]">
+                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E] hover:scale-110 duration-300  transition-all ease-in-out">
                     <div class="text-center">
                         <h3 class="font-semibold text-lg">Hailee Corwin</h3>
                         <h4>Master Barber</h4>
@@ -238,7 +244,7 @@
 
     <footer class="bg-[#1A1A18] mx-auto py-10 grid lg:grid-cols-4 gap-5">
 
-        <div class="font-bold text-white text-sm lg:text-2xl flex flex-col items-center gap-y-2">
+        <div class="font-bold text-white text-sm lg:text-2xl flex flex-col items-center gap-y-2 font-heading">
             <img src="logo.png" alt="logo" class="h-10 lg:h-20 border-2 border-[#C8A96E]">
             <h3 class="text-center max-xl:text-xl">Razor & Co. Barbershop</h3>
         </div>
@@ -265,7 +271,8 @@
         <div class="text-white text-center max-lg:hidden">
             <h3 class="font-bold">CONTACT US</h3>
             <div class="mt-4">
-            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae esse error neque ipsum sed, corrupti omnis.</p>
+                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae esse
+                    error neque ipsum sed, corrupti omnis.</p>
             </div>
         </div>
 

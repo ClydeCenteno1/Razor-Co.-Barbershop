@@ -13,3 +13,11 @@
 .leather {
     color: #3D3830;
 }
+
+.font-body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-heading {
+    font-family: 'Oswald', sans-serif;
+}
