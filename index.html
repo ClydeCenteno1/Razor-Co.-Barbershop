@@ -14,7 +14,7 @@
 
     <!-- Navbar Section -->
     <nav
-        class="px-4 py-4 bg-[#1A1A18] m-5 max-lg:m-2 rounded-3xl border border-[#C8A96E] shadow-2xl absolute top-0 left-0 right-0 z-50">
+        class="px-4 py-4 bg-[#1A1A18] my-5 max-lg:m-2 rounded-3xl border border-[#C8A96E] shadow-2xl absolute top-0 left-0 right-0 z-50 mx-auto lg:max-w-7xl">
         <div class="flex justify-between">
             <div class="flex items-center space-x-2 max-lg:mx-auto">
                 <img src="logo.png" alt="logo" class="h-10 w-10 rounded-full border border-[#C8A96E]">
@@ -214,7 +214,7 @@
             <div class="grid lg:grid-cols-2 gap-2 mt-5">
                 <div class="flex justify-center items-center flex-col">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyaUzlRNRsPLJNuouKGl5XYRH1CknlxMnhnOkCr6T9gReDwCtpOZYLP4&s=10"
-                        alt="barber" class="rounded-full w-64 h-64 object-cover">
+                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E]">
                     <div class="text-center">
                         <h3 class="font-semibold text-lg">Amira Feil</h3>
                         <h4>Barber</h4>
@@ -223,7 +223,7 @@
 
                 <div class="flex justify-center items-center flex-col">
                     <img src="https://as2.ftcdn.net/jpg/06/10/51/33/1000_F_610513347_Qjqz5OOrrUqK02ilUoUyi2ScmMEDxMDm.jpg"
-                        alt="barber" class="rounded-full w-64 h-64 object-cover">
+                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E]">
                     <div class="text-center">
                         <h3 class="font-semibold text-lg">Hailee Corwin</h3>
                         <h4>Master Barber</h4>
@@ -236,21 +236,39 @@
 
     <!-- Footer -->
 
-    <footer class="bg-[#1A1A18] p-2">
-        <div class="container mx-auto h-[25vh] flex items-center justify-center">
+    <footer class="bg-[#1A1A18] mx-auto py-10 grid lg:grid-cols-4 gap-5">
 
-            <div class="grid grid-cols-2 border-b">
+        <div class="font-bold text-white text-sm lg:text-2xl flex flex-col items-center gap-y-2">
+            <img src="logo.png" alt="logo" class="h-10 lg:h-20 border-2 border-[#C8A96E]">
+            <h3 class="text-center max-xl:text-xl">Razor & Co. Barbershop</h3>
+        </div>
 
-                <div class="flex flex-col lg:flex-row">
-                    <div class="flex flex-col items-center justify-center space-y-2">
-                        <img src="logo.png" alt="logo" class="h-20 w-20 rounded-full border border-[#C8A96E]">
-                        <h2 class="text-white font-semibold">Razor & Co. Barbershop</h2>
-                    </div>
+        <div class="text-white flex flex-col text-center">
+            <h3 class="font-bold">CONTACT INFO</h3>
+            <div class="mt-4">
+                <h4>Address: 7 Main Street</h4>
+                <h4>Phone: 326-4557</h4>
+                <h4>Hours: 1pm - 3pm</h4>
+            </div>
+        </div>
 
+        <div class="text-white flex flex-col items-center">
+            <h3 class="font-bold">SOCIAL MEDIA</h3>
 
+            <div class="flex gap-x-4 justify-center mt-4">
+                <i class="fa fa-facebook-official text-3xl" aria-hidden="true"></i>
+                <i class="fa fa-instagram text-3xl" aria-hidden="true"></i>
+                <i class="fa fa-twitter-square text-3xl" aria-hidden="true"></i>
+            </div>
+        </div>
 
+        <div class="text-white text-center max-lg:hidden">
+            <h3 class="font-bold">CONTACT US</h3>
+            <div class="mt-4">
+            <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae esse error neque ipsum sed, corrupti omnis.</p>
+            </div>
+        </div>
 
-                </div>
     </footer>
 
 
