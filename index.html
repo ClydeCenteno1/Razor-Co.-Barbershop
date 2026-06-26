@@ -43,7 +43,7 @@
                 <i class="fa fa-bars text-[#C8A96E] text-3xl " aria-hidden="true" id="hamburgerIcon"></i>
             </div>
         </div>
-        <div class="mobileNav hidden" id="mobileNav">
+        <div class="mobileNav overflow-hidden max-h-0 opacity-0 transition-all duration-300 ease-in-out" id="mobileNav">
             <div>
                 <ul class="flex flex-col text-white space-y-5 font-semibold font-heading">
                     <a href="#services" class=" mt-3">SERVICES</a>
@@ -72,6 +72,7 @@
                     NOW</a>
 
             </div>
+        </div>
     </section>
     <!-- Services -->
     <section class="my-10 container mx-auto space-y-10 px-4" id="services">
@@ -86,8 +87,7 @@
                 </div>
                 <div class="space-y-3 lg:space-y-4">
                     <h2 class="font-semibold text-lg">HAIRCUT</h2>
-                    <p class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                        aliquid illum beatae dolore numquam repellendus.</p>
+                    <p class="text-sm lg:text-base">Clean, sharp cuts tailored to your style — from classic fades to modern crops. Includes a wash and style finish.</p>
                     <h3
                         class="font-bold text-2xl lg:text-3xl border border-[#C8A96E] inline-block px-3 py-1 bg-[#C8A96E] rounded-xl text-black">
                         ₱150</h3>
@@ -102,8 +102,7 @@
                 </div>
                 <div class="space-y-3 lg:space-y-4">
                     <h2 class="font-semibold text-lg">BEARD TRIM</h2>
-                    <p class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                        aliquid illum beatae dolore numquam repellendus.</p>
+                    <p class="text-sm lg:text-base">Precision lineup and shape-up to keep your beard looking sharp and well-groomed, with hot towel finish.</p>
                     <h3
                         class="font-bold text-2xl lg:text-3xl border border-[#C8A96E] inline-block px-3 py-1 bg-[#C8A96E] rounded-xl text-black">
                         ₱200</h3>
@@ -118,8 +117,7 @@
                 </div>
                 <div class="space-y-3 lg:space-y-4">
                     <h2 class="font-semibold text-lg">SHAVE</h2>
-                    <p class="text-sm lg:text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio
-                        aliquid illum beatae dolore numquam repellendus.</p>
+                    <p class="text-sm lg:text-base">A classic hot towel straight razor shave for the smoothest, cleanest finish — relaxing and refreshing.</p>
                     <h3
                         class="font-bold text-2xl lg:text-3xl border border-[#C8A96E] inline-block px-3 py-1 bg-[#C8A96E] rounded-xl text-black">
                         ₱50</h3>
@@ -139,19 +137,7 @@
                     <div>
                         <h2 class="text-5xl font-semibold font-heading">ABOUT THE SHOP</h2>
                     </div>
-                    <p class="leading-relaxed text-justi">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Animi excepturi
-                        saepe ex voluptas neque consequuntur libero, facere fugit voluptatem accusamus iure officiis
-                        aliquid
-                        aspernatur dolore, laudantium illo! Odit, atque dolorum.
-                        Eveniet omnis eaque error ipsum corrupti, obcaecati nostrum quae fuga, ut veritatis modi.
-                        Facilis,
-                        amet consequuntur maiores beatae nam autem non minus quod dicta. Reiciendis reprehenderit amet
-                        enim
-                        voluptate culpa?
-                        Deserunt, velit? Veniam, rem optio. Perspiciatis sint a odit adipisci corrupti sed sunt autem
-                        tempore. Minima veritatis harum doloremque placeat, ipsum quos facere ab et vero consectetur?
-                        Dolorem, consequuntur consequatur!</p>
+                    <p class="leading-relaxed text-justify">At Razor & Co., we believe a great haircut is more than just a service — it's an experience. Our barbers combine old-school technique with modern style, making sure every client walks out looking sharp and feeling confident. Step into our shop and enjoy quality grooming in a relaxed, no-rush atmosphere.</p>
                 </div>
 
                 <img src="https://cdn.shopify.com/s/files/1/0558/6413/1764/files/Barbershop_Interior_Design_13_1024x1024.webp?v=1729670363"
@@ -220,7 +206,8 @@
             <div class="grid lg:grid-cols-2 gap-2 mt-5">
                 <div class="flex justify-center items-center flex-col">
                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtyaUzlRNRsPLJNuouKGl5XYRH1CknlxMnhnOkCr6T9gReDwCtpOZYLP4&s=10"
-                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E] hover:scale-110 duration-300 transition-all ease-in-out">
+                        alt="barber"
+                        class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E] hover:scale-110 duration-300 transition-all ease-in-out">
                     <div class="text-center">
                         <h3 class="font-semibold text-lg">Amira Feil</h3>
                         <h4>Barber</h4>
@@ -229,7 +216,8 @@
 
                 <div class="flex justify-center items-center flex-col">
                     <img src="https://as2.ftcdn.net/jpg/06/10/51/33/1000_F_610513347_Qjqz5OOrrUqK02ilUoUyi2ScmMEDxMDm.jpg"
-                        alt="barber" class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E] hover:scale-110 duration-300  transition-all ease-in-out">
+                        alt="barber"
+                        class="rounded-full w-64 h-64 object-cover border-2 border-[#C8A96E] hover:scale-110 duration-300  transition-all ease-in-out">
                     <div class="text-center">
                         <h3 class="font-semibold text-lg">Hailee Corwin</h3>
                         <h4>Master Barber</h4>
@@ -253,8 +241,8 @@
             <h3 class="font-bold">CONTACT INFO</h3>
             <div class="mt-4">
                 <h4>Address: 7 Main Street</h4>
-                <h4>Phone: 326-4557</h4>
-                <h4>Hours: 1pm - 3pm</h4>
+                <h4>Phone: (02) 8326-4557</h4>
+                <h4>Hours: Mon–Sat, 9am – 7pm</h4>
             </div>
         </div>
 
@@ -262,17 +250,19 @@
             <h3 class="font-bold">SOCIAL MEDIA</h3>
 
             <div class="flex gap-x-4 justify-center mt-4">
-                <a class="fa fa-facebook-official text-3xl" href="https://www.facebook.com/" target="_blank" aria-hidden="true"></a>
-                <a class="fa fa-instagram text-3xl" href="https://www.instagram.com/" target="_blank"  aria-hidden="true"></a>
-                <a class="fa fa-twitter-square text-3xl" href="https://www.x.com/" target="_blank"  aria-hidden="true"></a>
+                <a class="fa fa-facebook-official text-3xl" href="#" target="_blank"
+                    aria-hidden="true"></a>
+                <a class="fa fa-instagram text-3xl" href="#" target="_blank"
+                    aria-hidden="true"></a>
+                <a class="fa fa-twitter-square text-3xl" href="#" target="_blank"
+                    aria-hidden="true"></a>
             </div>
         </div>
 
         <div class="text-white text-center max-lg:hidden">
             <h3 class="font-bold">CONTACT US</h3>
             <div class="mt-4">
-                <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quae esse
-                    error neque ipsum sed, corrupti omnis.</p>
+                <p class="text-start">Got questions or want to book a walk-in? Reach out to us — we're happy to help you look and feel your best.</p>
             </div>
         </div>
 
